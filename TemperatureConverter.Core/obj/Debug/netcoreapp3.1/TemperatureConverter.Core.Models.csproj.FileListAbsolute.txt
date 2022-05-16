@@ -1,0 +1,5 @@
+C:\Projects\TemperatureConverter\TemperatureConverter.Core.Models\obj\Debug\netcoreapp3.1\TemperatureConverter.Core.Models.csproj.AssemblyReference.cache
+C:\Projects\TemperatureConverter\TemperatureConverter.Core.Models\obj\Debug\netcoreapp3.1\TemperatureConverter.Core.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\TemperatureConverter\TemperatureConverter.Core.Models\obj\Debug\netcoreapp3.1\TemperatureConverter.Core.Models.AssemblyInfoInputs.cache
+C:\Projects\TemperatureConverter\TemperatureConverter.Core.Models\obj\Debug\netcoreapp3.1\TemperatureConverter.Core.Models.AssemblyInfo.cs
+C:\Projects\TemperatureConverter\TemperatureConverter.Core.Models\obj\Debug\netcoreapp3.1\TemperatureConverter.Core.Models.csproj.CoreCompileInputs.cache

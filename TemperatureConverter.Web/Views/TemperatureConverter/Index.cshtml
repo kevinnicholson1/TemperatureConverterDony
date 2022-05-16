@@ -1,0 +1,35 @@
+﻿@model TemperatureConverter.Web.Models.TemperatureConverterViewModel
+@using TemperatureConverter.Core.Enum;
+@using Microsoft.Extensions.Configuration;
+@inject IConfiguration configuration;
+
+<div class="content-header">
+    <h1>Temperature Converter</h1>
+</div>
+
+<div class="content">
+    <div class="col-12 p-0">
+        <div class="card light-border">
+            <div class="card-body">
+                <div class="card-header">
+                    <form enctype="multipart/form-data">
+                        <div class="form-group row">
+                            <span class="col-sm-2"><select asp-for="ConvertFromScale" asp-items="@Html.GetEnumSelectList<TemperatureScale>()"></select></span>
+                            <span class="col-sm-3"><input asp-for="ConvertFromTemperature" /></span>
+                            <span class="col-sm-2 equals">=</span>
+                            <span class="col-sm-3"><input asp-for="ConvertToTemperature" disabled /></span>
+                            <span class="col-sm-2"><select asp-for="ConvertToScale" asp-items="@Html.GetEnumSelectList<TemperatureScale>()"></select></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <button type="button" id="btnConvert" class="btn btn-primary">Convert</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var apiUrl ='@(configuration.GetValue<string>("APISettings:Url"))';
+</script>
